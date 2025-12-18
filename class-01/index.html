@@ -6,12 +6,17 @@
     <title>Vuejs since scratch</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <h1>{{ message }}</h1>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
 
     <script>
         new Vue({
             el: '#app',
+            data: {
+                message: 'Hello, EdTeam students',
+            }
         })
     </script>    
 
