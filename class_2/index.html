@@ -12,6 +12,7 @@
                 {{ index }} - {{ message }}
             </li>
         </ul>
+        <button @click="addNewMessage">Add Message</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
 
@@ -24,6 +25,12 @@
                     'Ill go to the movie theater',
                     'Study Vue at EDTeam',
                 ],
+            },
+            methods: {
+                addNewMessage() {
+                    const message = 'Ride bicycle';
+                    this.messages.push(message);
+                }
             }
         })
     </script>
