@@ -13,6 +13,11 @@
             </li>
         </ul>
         <button @click="addNewMessage">Add Message</button>
+        <br>
+        <br>
+        <h1 v-if="lantern">Turn On</h1>
+        <h1 v-else>Turn Off</h1>
+        <button>Turn On/Turn Off</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
 
@@ -26,6 +31,7 @@
                     'Study Vue at EDTeam',
                 ],
                 mainClass: 'container',
+                lantern: false,
             },
             methods: {
                 addNewMessage() {
