@@ -18,6 +18,8 @@
         <h1 v-if="lantern">Turn On</h1>
         <h1 v-else>Turn Off</h1>
         <button @click="turnOnOff">Turn On/Turn Off</button>
+        <br>
+        <h2 v-show="showName">My name is Josh</h2>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
 
@@ -32,6 +34,7 @@
                 ],
                 mainClass: 'container',
                 lantern: false,
+                showName: false,
             },
             methods: {
                 addNewMessage() {
