@@ -7,8 +7,8 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-            <li v-for="(message, index) in messages">
+        <ul v-for="(message, index) in messages" class="message">
+            <li>
                 {{ index }} - {{ message }}
             </li>
         </ul>
