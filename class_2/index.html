@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 2</title>
+    <style>
+        .active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <ul v-for="(message, index) in messages">
+            <li>
+                {{ index }} - {{ message }}
+            </li>
+        </ul>
+        <button @click="addNewMessage">Add Message</button>
+        <br>
+        <br>
+        <h1 v-if="lantern">Turn On</h1>
+        <h1 v-else>Turn Off</h1>
+        <button @click="turnOnOff">Turn On/Turn Off and Show Name</button>
+        <br>
+        <h2 :class="{active: showName}" :style="{backgroundColor: showName ? 'yellow' : 'blue'}">My name is Josh</h2>
+        <br>
+        <h2>{{  isLanternOn }}</h2>
+<!--         <button @click="changeShowStatus">Show Name</button> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                messages: [
+                    'I went to go for a walk',
+                    'Ill go to the movie theater',
+                    'Study Vue at EDTeam',
+                ],
+                mainClass: 'container',
+                lantern: false,
+                showName: false,
+            },
+            methods: {
+                addNewMessage() {
+                    const message = 'Ride bicycle';
+                    this.messages.push(message);
+                },
+                turnOnOff() {
+                    this.lantern = !this.lantern;
+                    this.changeShowStatus();
+                },
+                changeShowStatus() {
+                    this.showName = !this.showName;
+                }
+            },
+            computed: {
+                isLanternOn() {
+                    return this.lantern && this.showName ? 'The lantern is on' : 'The lantern is off';
+                }
+            }, 
+            watch: {
+                lantern(value, oldValue) {
+                    console.log({ value, oldValue });
+                    console.log(`The lantern was in ${oldValue} and now is ${value}`);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
