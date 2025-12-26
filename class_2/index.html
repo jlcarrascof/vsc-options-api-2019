@@ -24,7 +24,7 @@
         <h1 v-else>Turn Off</h1>
         <button @click="turnOnOff">Turn On/Turn Off and Show Name</button>
         <br>
-        <h2 v-show="showName" :class="{active: showName}">My name is Josh</h2>
+        <h2 :class="{active: showName}">My name is Josh</h2>
         <br>
         <h2>{{  isLanternOn }}</h2>
 <!--         <button @click="changeShowStatus">Show Name</button> -->
