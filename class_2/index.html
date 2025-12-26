@@ -54,7 +54,13 @@
             },
             computed: {
                 isLanternOn() {
-                    return this.lantern ? 'The lantern is on' : 'The lantern is off';
+                    return this.lantern && this.showName ? 'The lantern is on' : 'The lantern is off';
+                }
+            }, 
+            watch: {
+                lantern(value, oldValue) {
+                    console.log({ value, oldValue });
+                    console.log(`The lantern was in ${oldValue} and now is ${value}`);
                 }
             }
         })
