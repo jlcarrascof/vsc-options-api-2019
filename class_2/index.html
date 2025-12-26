@@ -21,6 +21,7 @@
         <br>
         <h2 v-show="showName">My name is Josh</h2>
         <br>
+        <h2>{{  isLanternOn }}</h2>
 <!--         <button @click="changeShowStatus">Show Name</button> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
@@ -49,6 +50,11 @@
                 },
                 changeShowStatus() {
                     this.showName = !this.showName;
+                }
+            },
+            computed: {
+                isLanternOn() {
+                    return this.lantern ? 'The lantern is on' : 'The lantern is off';
                 }
             }
         })
