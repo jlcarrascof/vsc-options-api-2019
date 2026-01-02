@@ -4,7 +4,7 @@ import FirstComponent from './components/FirstComponent.vue'
 
 Vue.config.productionTip = false
 
-Vue.use('first-component', FirstComponent)
+Vue.component('first-component', FirstComponent)
 
 new Vue({
   render: h => h(App),
