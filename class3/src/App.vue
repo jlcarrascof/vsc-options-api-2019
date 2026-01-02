@@ -1,14 +1,19 @@
 <template>
-  <FirstComponent />
+  <div>
+    <FirstComponent />
+    <SecondComponent />
+  </div>
 </template>
 
 <script>
   import FirstComponent from './components/FirstComponent.vue';
+  import SecondComponent from './components/SecondComponent.vue';
 
   export default {
     name: 'App',
     components: {
-      FirstComponent
+      FirstComponent,
+      SecondComponent
     }
   }
 </script>
