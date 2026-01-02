@@ -6,12 +6,14 @@
     <title>Class 3</title>
 </head>
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <first-component></first-component>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
     
     <script>
-        Vue.compónent('first component', {
+        Vue.component('first-component', {
             template: '<h1> Hello, EDTeam</h1>',
         })
         new Vue({
