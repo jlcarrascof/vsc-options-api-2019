@@ -8,16 +8,24 @@
 <body>
     <div id="app">
         <first-component></first-component>
+        <second-component></second-component>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
     
     <script>
         Vue.component('first-component', {
-            template: '<h1> Hello, EDTeam</h1>',
+            template: '<h1>Hello, EDTeam</h1>',
+        })
+
+        Vue.component('second-component', {
+            template: '<h2>Second Component</h2>',  
         })
         new Vue({
             el: '#app',
+            component: {
+                secondComponent: 'second-component',
+            },
         })
     </script>
 </body>
