@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 ref="mainElement">First Component</h1>
+        <h1 ref="mainElement">{{ message }}</h1>
         <button @click="changeMessage">Change Message</button>
     </div>
 </template>
@@ -11,6 +11,11 @@
         data() {
             return {
                 message: 'Hello'
+            }
+        },
+        methods: {
+            changeMessage () {
+                this.message = 'Hello changed'
             }
         },
         beforeCreate() {
@@ -33,9 +38,11 @@
         },
         beforeUpdate() {
             console.log(`I'm in beforeUpdate() ....`)
+            console.log(this.$refs.mainElement)             
         },
         updated() {
             console.log(`I'm in updated() ....`)
+            console.log(this.$refs.mainElement)             
         }    
     }
 </script>
