@@ -21,6 +21,7 @@
         beforeMount() {
             console.log(`I'm in beforeMount() ....`)
             console.log(this.$refs)             
+            console.log(this.$refs.mainElement)             
         },
         mounted() {
             console.log(`I'm in mounted() ....`)
