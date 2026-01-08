@@ -1,5 +1,5 @@
 <template>
-    <h1 ref="element">First Component</h1>
+    <h1 ref="mainElement">First Component</h1>
 </template>
 
 <script>
@@ -21,6 +21,10 @@
         beforeMount() {
             console.log(`I'm in beforeMount() ....`)
             console.log(this.$refs)             
+        },
+        mounted() {
+            console.log(`I'm in mounted() ....`)
+            console.log(this.$refs.mainElement)             
         }    
     }
 </script>
