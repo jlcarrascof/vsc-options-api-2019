@@ -1,5 +1,5 @@
 <template>
-    <h1>First Component</h1>
+    <h1 ref="element">First Component</h1>
 </template>
 
 <script>
@@ -17,6 +17,10 @@
         created() {
             console.log(`I'm in created() ....`)
             console.log(this.message)            
+        }, 
+        beforeMount() {
+            console.log(`I'm in beforeMount() ....`)
+            console.log(this.$refs)             
         }    
     }
 </script>
