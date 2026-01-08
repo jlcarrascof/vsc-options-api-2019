@@ -13,6 +13,10 @@
         beforeCreate() {
             console.log(`I'm in beforeCreate() ....`)
             console.log(this.message)
+        }, 
+        created() {
+            console.log(`I'm in created() ....`)
+            console.log(this.message)            
         }    
     }
 </script>
