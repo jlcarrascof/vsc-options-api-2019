@@ -2,7 +2,7 @@
     <div>
         <h1 ref="mainElement">{{ message }}</h1>
         <button @click="changeMessage">Change Message</button>
-        <buttom @click="destroy()">Destroy Component</buttom>
+        <button @click="destroy()">Destroy Component</button>
     </div>
 </template>
 
