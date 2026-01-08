@@ -43,7 +43,15 @@
         updated() {
             console.log(`I'm in updated() ....`)
             console.log(this.$refs.mainElement)             
-        }    
+        },
+        beforeDestroy() {
+            console.log(`I'm in beforeDestroy() ....`)
+            console.log(this.message)
+        },
+        destroyed() {
+            console.log(`I'm in destroyed() ....`)
+            console.log(this.message)
+        }
     }
 </script>
 
