@@ -24,6 +24,7 @@
         },
         mounted() {
             console.log(`I'm in mounted() ....`)
+            console.log(this.$refs)             
             console.log(this.$refs.mainElement)             
         }    
     }
