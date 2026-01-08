@@ -1,5 +1,8 @@
 <template>
-    <h1 ref="mainElement">First Component</h1>
+    <div>
+        <h1 ref="mainElement">First Component</h1>
+        <button @click="changeMessage">Change Message</button>
+    </div>
 </template>
 
 <script>
