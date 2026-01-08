@@ -4,10 +4,17 @@
 
 <script>
     export default {
-        name: 'FirstComponent'    
+        name: 'FirstComponent',
+        data() {
+            return {
+                message: 'Hello'
+            }
+        },
+        beforeCreate() {
+
+        }    
     }
 </script>
 
 <style>
-
 </style>
