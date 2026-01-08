@@ -11,7 +11,8 @@
             }
         },
         beforeCreate() {
-
+            console.log(`I'm in beforeCreate() ....`)
+            console.log(this.message)
         }    
     }
 </script>
