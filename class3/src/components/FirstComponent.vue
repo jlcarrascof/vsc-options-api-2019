@@ -27,6 +27,12 @@
             console.log(`I'm in mounted() ....`)
             console.log(this.$refs)             
             console.log(this.$refs.mainElement)             
+        },
+        beforeUpdate() {
+            console.log(`I'm in beforeUpdate() ....`)
+        },
+        updated() {
+            console.log(`I'm in updated() ....`)
         }    
     }
 </script>
