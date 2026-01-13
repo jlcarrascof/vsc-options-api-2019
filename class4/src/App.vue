@@ -1,12 +1,12 @@
 <template>
+  <ChildComponent />
 </template>
 
 <script>
-
-export default {
-  name: 'App',
-
-}
+  import ChildComponent from './components/ChildComponent.vue';
+  export default {
+    name: 'App',
+  }
 </script>
 
 <style>
