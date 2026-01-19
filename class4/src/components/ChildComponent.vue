@@ -5,6 +5,11 @@
 <script>
     export default {
         name: 'ChildComponent',
-        props: ['newMessage'],
+        props: {
+            newMessage: {
+                type: String,
+                default: 'What a good pizza!! :)'
+            }
+        }
     }
 </script>
