@@ -11,7 +11,7 @@
     },
     data() {
       return {
-        message: '.......'
+        message: 'What a tasty pizza!!'
       }
     }
   }

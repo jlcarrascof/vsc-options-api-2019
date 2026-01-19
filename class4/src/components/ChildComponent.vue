@@ -8,7 +8,8 @@
         props: {
             newMessage: {
                 type: String,
-                default: 'What a good pizza!! :)'
+                default: 'What a good pizza!! :)',
+                validator: value => { return value.includes('pizza') }
             }
         }
     }
