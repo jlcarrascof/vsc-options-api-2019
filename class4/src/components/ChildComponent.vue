@@ -1,5 +1,5 @@
 <template>
-    <h1>Hello, EDTeam students.</h1>
+    <h1>{{ message }}</h1>
 </template>
 
 <script>
