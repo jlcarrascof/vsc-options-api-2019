@@ -1,5 +1,5 @@
 <template>
-  <ChildComponent :newMessage="message" />
+  <ChildComponent  />
 </template>
 
 <script>
