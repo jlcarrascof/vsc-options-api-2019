@@ -1,10 +1,10 @@
 <template>
-    <h1>{{ message }}</h1>
+    <h1>{{ newMessage }}</h1>
 </template>
 
 <script>
     export default {
         name: 'ChildComponent',
-        props: ['message'],
+        props: ['newMessage'],
     }
 </script>
