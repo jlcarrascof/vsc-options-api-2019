@@ -4,6 +4,7 @@
 
 <script>
     export default {
-        name: 'ChildComponent'
+        name: 'ChildComponent',
+        props: ['message'],
     }
 </script>
