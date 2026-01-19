@@ -1,5 +1,5 @@
 <template>
-  <ChildComponent />
+  <ChildComponent message="What tasty had the pizza" />
 </template>
 
 <script>
