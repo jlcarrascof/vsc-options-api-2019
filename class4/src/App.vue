@@ -1,5 +1,5 @@
 <template>
-  <ChildComponent message="What tasty had the pizza" />
+  <ChildComponent message="message" />
 </template>
 
 <script>
@@ -8,6 +8,11 @@
     name: 'App',
     components: {
       ChildComponent
+    },
+    data() {
+      return {
+        message: 'What tasty had the pizza'
+      }
     }
   }
 </script>
