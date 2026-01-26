@@ -1,5 +1,5 @@
 <template>
-  <ChildComponent  />
+  <ChildComponent :newMessage = "message" @changeMessage="cambiandoMensaje"  />
 </template>
 
 <script>
