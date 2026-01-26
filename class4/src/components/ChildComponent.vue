@@ -1,5 +1,8 @@
 <template>
-    <h1>{{ newMessage }}</h1>
+    <div>
+        <h1>{{ newMessage }}</h1>
+        <button>Change Message</button>
+    </div>
 </template>
 
 <script>
