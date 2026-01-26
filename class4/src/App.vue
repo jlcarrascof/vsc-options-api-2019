@@ -16,7 +16,7 @@
     },
     methods: {
       cambiandoMensaje(event) {
-        console.log(event);
+        this.message = event;
       }
     }
   }
