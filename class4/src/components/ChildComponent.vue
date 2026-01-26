@@ -14,6 +14,11 @@
                 default: 'What a good pizza!! :)',
                 validator: value => { return value.includes('pizza') }
             }
-        }
+        },
+        methods: {
+            emitNewMessage() {
+                this.$emit('changeMessage', 'We want more pizza');
+            }
+        }    
     }
 </script>
