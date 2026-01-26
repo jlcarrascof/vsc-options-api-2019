@@ -13,6 +13,11 @@
       return {
         message: 'What a tasty pizza!!'
       }
+    },
+    methods: {
+      cambiandoMensaje(event) {
+        console.log(event);
+      }
     }
   }
 </script>
