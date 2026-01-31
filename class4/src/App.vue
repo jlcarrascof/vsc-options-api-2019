@@ -1,8 +1,13 @@
 <template>
-  <ChildComponent>
-    <h2>Which pizza flavor did you like the most?</h2>
-    <h3>Papa John's o Pizza Hut</h3>
-  </ChildComponent>
+  <div>
+    <ChildComponent>
+      <h2>Which pizza flavor did you like the most?</h2>
+      <h3>Papa John's o Pizza Hut</h3>
+    </ChildComponent>
+    <ChildComponent>
+      
+    </ChildComponent>
+  </div>
 </template>
 
 <script>
