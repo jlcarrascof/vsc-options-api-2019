@@ -2,7 +2,7 @@
   <div>
     <ChildComponent>
       <template v-slot:mainSlot="scopedSlot">
-        <h3>{{ scopedSlot }}</h3>
+        <h3>{{ scopedSlot.mensaje }}</h3>
       </template>
     </ChildComponent>
   </div>
