@@ -2,7 +2,7 @@
   <div>
     <ChildComponent>
       <template v-slot:mainSlot>
-        <h3>Papa John's o Pizza Hut</h3>
+        <h3></h3>
       </template>
     </ChildComponent>
   </div>

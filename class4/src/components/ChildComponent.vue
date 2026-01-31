@@ -8,6 +8,7 @@
 
 <script>
     export default {
-        name: 'ChildComponent'
+        name: 'ChildComponent',
+        message: `Papa John's o Pizza Hut`
     }
 </script>
