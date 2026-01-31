@@ -1,7 +1,9 @@
 <template>
   <div>
     <ChildComponent>
-      <h3>Papa John's o Pizza Hut</h3>
+      <template v-slot:mainSlot>
+        <h3>Papa John's o Pizza Hut</h3>
+      </template>
     </ChildComponent>
   </div>
 </template>
