@@ -1,7 +1,6 @@
 <template>
     <div>
-        <h1>{{ newMessage }}</h1>
-        <button @click="emitNewMessage">Change Message</button>
+        <h1>Hello, EDTeam</h1>
     </div>
 </template>
 
