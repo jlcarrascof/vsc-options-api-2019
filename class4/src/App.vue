@@ -1,5 +1,7 @@
 <template>
-  <ChildComponent />
+  <ChildComponent>
+    <h2>Which pizza flavor did you like the most?</h2>
+  </ChildComponent>
 </template>
 
 <script>
