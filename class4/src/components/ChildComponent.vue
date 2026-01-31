@@ -6,18 +6,6 @@
 
 <script>
     export default {
-        name: 'ChildComponent',
-        props: {
-            newMessage: {
-                type: String,
-                default: 'What a good pizza!! :)',
-                validator: value => { return value.includes('pizza') }
-            }
-        },
-        methods: {
-            emitNewMessage() {
-                this.$emit('changeMessage', 'We want more pizza');
-            }
-        }    
+        name: 'ChildComponent'
     }
 </script>
