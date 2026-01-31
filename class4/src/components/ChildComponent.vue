@@ -11,6 +11,10 @@
 <script>
     export default {
         name: 'ChildComponent',
-        message: `Papa John's o Pizza Hut`
+        data () {
+            return {
+                message: `Papa John's o Pizza Hut`
+            }
+        }
     }
 </script>
