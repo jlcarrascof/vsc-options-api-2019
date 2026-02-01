@@ -9,7 +9,7 @@
         name: 'BrotherComponent',
         methods: {
             newMessage () {
-
+                eventBus.$emit('newMessage', 'Do you wanna Pizza?')
             }
         }
     }
