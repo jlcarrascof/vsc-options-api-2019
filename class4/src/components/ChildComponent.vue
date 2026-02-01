@@ -5,12 +5,18 @@
 </template>
 
 <script>
+    import eventBus from '../eventBus'
     export default {
         name: 'ChildComponent',
         data () {
             return {
                 message: `Papa John's o Pizza Hut`
             }
+        },
+        created () {
+            eventBus.$on('newMessage', (event) => {
+                this.message = event
+            })
         }
     }
 </script>
