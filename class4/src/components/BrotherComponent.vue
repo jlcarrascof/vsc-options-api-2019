@@ -3,11 +3,13 @@
 </template>
 
 <script>
+    import eventBus from '../eventBus';
+
     export default {
         name: 'BrotherComponent',
         methods: {
             newMessage () {
-                
+
             }
         }
     }
