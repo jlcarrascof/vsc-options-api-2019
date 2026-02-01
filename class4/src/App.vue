@@ -1,17 +1,18 @@
 <template>
   <div>
-    <ChildComponent>
-
-    </ChildComponent>
+    <ChildComponent />
+    <BrotherComponent />
   </div>
 </template>
 
 <script>
+  import BrotherComponent from './components/BrotherComponent';
   import ChildComponent from './components/ChildComponent';
   export default {
     name: 'App',
     components: {
-      ChildComponent
+      ChildComponent,
+      BrotherComponent
     },
     data() {
       return {
