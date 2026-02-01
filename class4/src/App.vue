@@ -1,9 +1,7 @@
 <template>
   <div>
     <ChildComponent>
-      <template v-slot:mainSlot="scopedSlot">
-        <h3>{{ scopedSlot.mensaje }}</h3>
-      </template>
+
     </ChildComponent>
   </div>
 </template>
